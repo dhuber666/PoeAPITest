@@ -52,10 +52,10 @@ $(document).ready(function() {
 		$('#input').css('display', 'none');
 		let timer = $('#timer');
 		console.log(timer);
-		let counter = 0;
+		let counter = 30;
 		id = setInterval(function() {
-			if (counter < 30) {
-				counter++;
+			if (counter > 0) {
+				counter--;
 				timer.text(counter);
 			} else {
 				clearInterval(id);
