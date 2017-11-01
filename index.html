@@ -2,15 +2,27 @@
 <html>
 <head>
 	<title>lolol</title>
+	<link rel="stylesheet" href="styles.css">
 	<script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 </head>
 <body>
-<button id="btn">Clear the Interval and start timer</button>
-<p id="timer"></p>
-
+	<h1>Poe Api Test</h1>
+	<h3 id="todoMessage">Chose an interval in ms</h3>
+	<div id="input">
+		<input type="number" id="numberInput">
+		<button id="btn">Go / Stop</button>
+	</div>
+	
+	<div id="fail">
+		<h3>Too many attempts try another value in: </h3>
+		<p id="timer"></p>
+	</div>
+	<div id="success">
+		<h3>No timeouts this interval is ok</h3>
+	</div>
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
